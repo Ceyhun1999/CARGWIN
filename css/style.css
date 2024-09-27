@@ -311,11 +311,6 @@ body,
 }
 
 
-@media (min-width: 1400px) {
-    .container {768
-        max-width: 1450px;
-    }
-}
 
 /*header styles (992)*/
 header {
@@ -376,6 +371,7 @@ nav {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
+    width: 165px;
 }
 
 .search__block input::placeholder {
@@ -763,6 +759,10 @@ nav {
     gap: 20px;
 }
 
+.finance-section__imgs-item3-mobile {
+    display: none!important;
+}
+
 .finance-section__text {
     max-width: 650px;
 }
@@ -1081,7 +1081,7 @@ nav {
 }
 
 .accrodion-grp {
-    max-width: 820px;
+    max-width: 650px;
     width: 100%;
 
 }
@@ -1287,6 +1287,10 @@ footer .container:last-child {
 .history-section__item-2-text {
     max-width: 660px;
     width: 100%;
+}
+
+.history-section__item-2-imgs div {
+    width: 50%;
 }
 
 .history-section__item-1-img img,
@@ -1535,6 +1539,10 @@ footer .container:last-child {
 
 .car-fullstory-parametrs__item h3 span:last-child {
     color: #656565;
+}
+
+.car-fullstory-characteristics__items h4 span , .car-fullstory-story-cars__inner p span{
+    font-size: 13px!important;
 }
 
 .car-fullstory-parametrs__items-inner {
@@ -2295,15 +2303,34 @@ footer .container:last-child {
         display: block;
     }
 
+    
     .finance-section__imgs-item3 {
         width: 100%;
         object-fit: contain;
         margin: 10px auto 0 auto;
+        display: none;
+    }
+    .finance-section__imgs-item3-mobile {
+        display: block!important;
+        margin-bottom: 20px;
+    }
+
+    .finance-section .section-btn-2-block {
+        display: inherit;
+        margin-top: 40px;
     }
 
     /*questions section responsive 992*/
     .questions-section__inner .row {
         flex-direction: column;
+    }
+
+    .questions-section__inner-right {
+        gap: 20px;
+    }
+
+    .questions-section .section-btn-2, .questions-section__inner-right {
+        margin-top: 20px;
     }
 
     /*how it work section responsive 992*/
@@ -2530,7 +2557,7 @@ footer .container:last-child {
 
     .first-installment,
     .monthly-payment,
-    .custom-label {
+    .custom-label, .label-zip {
         border: 1px solid #656565;
         border-radius: 6px;
         height: 76px;
@@ -2667,6 +2694,11 @@ footer .container:last-child {
         height: 200px;
     }
 
+  
+    .history-section__item-2-imgs {
+        gap: 8px;
+    }
+
     .history-section__item-2-imgs img {
         height: 180px;
     }
@@ -2686,7 +2718,7 @@ footer .container:last-child {
 
     /*car fullstory section styling 768*/
     .car-fullstory-parametrs h2 {
-        padding-top: 40px;
+        padding-top: 0;
     }
     .text-input input {
         font-size: 16px;
@@ -2741,8 +2773,8 @@ footer .container:last-child {
 
     .car-fullstory-slider .slider-main__img {
         height: 300px;
-        min-width: 60%;
-        max-width: 60%;
+        min-width: 90%;
+        max-width: 90%;
     }
 
     .car-fullstory-slider .slider-other__img div a {
